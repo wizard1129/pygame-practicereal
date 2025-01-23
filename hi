@@ -1,0 +1,32 @@
+class person:
+    head = 1
+    legs = 2
+    hands = 2
+
+    #initializing of instance or object var/prop
+    def __init__(self,name,age,height):
+        self.name = name
+        self.age = age
+        self.height = height
+
+    #methods/ behavior
+    def behave(self):
+        print("I am ",self.name,"I use my",self.legs,"legs to walk and ",self.head,"to think.")
+
+    def modify(self):
+        new_name = input("Enter the new name:")
+        print("Old name",self.name)
+        self.name = new_name
+        print("New name",self.name)
+        new_age = int(input("Enter new age:"))
+        self.age = new_age
+
+#intances /objects
+p1 = person("Avyaan",12,5.4)
+p2 = person("Dastan",100,5.11)
+p3 = person("Trump",64,5.10)
+
+#print(p2.name)
+#print(p1.name)
+#p1.behave()
+p1.modify
